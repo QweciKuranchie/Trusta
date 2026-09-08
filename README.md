@@ -14,6 +14,11 @@ Email:    demo@trusta.io
 Password: password123
 ```
 
+<p align="center">
+  <img src="./Screenshots/Dashboard%20Screen.png" alt="Trusta Dashboard Dark Theme" width="49%" />
+  <img src="./Screenshots/Dashboard-White%20Theme.png" alt="Trusta Dashboard Light Theme" width="49%" />
+</p>
+
 ---
 
 ## Project Structure
@@ -62,16 +67,16 @@ Open [http://localhost:5173](http://localhost:5173).
 
 ## Screens & States Covered
 
-| Screen | Route |
-|--------|-------|
-| Login | `/login` |
-| Dashboard | `/dashboard` |
-| Transaction History | `/transactions` |
-| Transaction Detail | `/transactions/:id` |
-| Send Money | `/send` |
-| Confirmation | `/send/confirm` |
-| Success | `/send/success` |
-| Failure | `/send/failure` |
+| Screen | Route | Visual Preview |
+|--------|-------|:---:|
+| Login | `/login` | [Preview](./Screenshots/Login%20screen.png) |
+| Dashboard | `/dashboard` | [Dark](./Screenshots/Dashboard%20Screen.png) / [Light](./Screenshots/Dashboard-White%20Theme.png) |
+| Transaction History | `/transactions` | [Preview](./Screenshots/Transcations%20Sreen.png) |
+| Transaction Detail | `/transactions/:id` | [Preview](./Screenshots/Transaction-deatil%20screen.png) |
+| Send Money | `/send` | [Preview](./Screenshots/Send-screen.png) |
+| Confirmation | `/send/confirm` | [Preview](./Screenshots/confirm%20screen.png) |
+| Success | `/send/success` | [Preview](./Screenshots/sucess%20screen.png) |
+| Failure | `/send/failure` | [Preview](./Screenshots/send%20error%20screen.png) |
 
 | State | Where |
 |-------|-------|
@@ -84,6 +89,48 @@ Open [http://localhost:5173](http://localhost:5173).
 | Processing | Full-screen non-dismissible overlay during transfer execution |
 | Success | Dedicated screen with receipt + updated balance |
 | Failure | Dedicated screen with error reason + "Your money is safe" reassurance |
+
+---
+
+## Screenshots & UI Gallery
+
+### 1. Authentication & Overview
+| Login Screen | Dashboard (Dark Theme) |
+| :---: | :---: |
+| <img src="./Screenshots/Login%20screen.png" alt="Login Screen" width="100%" /> | <img src="./Screenshots/Dashboard%20Screen.png" alt="Dashboard Dark Theme" width="100%" /> |
+
+| Dashboard (Light Theme) | Transaction History |
+| :---: | :---: |
+| <img src="./Screenshots/Dashboard-White%20Theme.png" alt="Dashboard Light Theme" width="100%" /> | <img src="./Screenshots/Transcations%20Sreen.png" alt="Transaction History" width="100%" /> |
+
+---
+
+### 2. Transaction Details & The Send Money Journey
+The send money flow guides the user through progressive disclosure, stateful non-dismissible processing, and explicit feedback:
+
+| 1. Send Money Form | 2. Transfer Confirmation |
+| :---: | :---: |
+| <img src="./Screenshots/Send-screen.png" alt="Send Money Form" width="100%" /> | <img src="./Screenshots/confirm%20screen.png" alt="Confirmation Screen" width="100%" /> |
+
+| 3. In-Flight Processing (Non-Dismissible) | 4. Transaction Detail View |
+| :---: | :---: |
+| <img src="./Screenshots/processing%20screen.png" alt="Processing State" width="100%" /> | <img src="./Screenshots/Transaction-deatil%20screen.png" alt="Transaction Detail" width="100%" /> |
+
+| 5A. Success State & Receipt | 5B. Recoverable Failure State |
+| :---: | :---: |
+| <img src="./Screenshots/sucess%20screen.png" alt="Transfer Success" width="100%" /> | <img src="./Screenshots/send%20error%20screen.png" alt="Transfer Error" width="100%" /> |
+
+---
+
+### 3. Responsive Mobile Views (375px Viewport)
+
+| Mobile Dashboard | Mobile Transactions | Mobile Detail |
+| :---: | :---: | :---: |
+| <img src="./Screenshots/Mobile%20Dashboard.png" width="100%" alt="Mobile Dashboard" /> | <img src="./Screenshots/Mobile-Transaction%20screen.png" width="100%" alt="Mobile Transactions" /> | <img src="./Screenshots/Mobile-transaction%20detail%20Screen.png" width="100%" alt="Mobile Transaction Detail" /> |
+
+| Mobile Send Form | Mobile Confirmation | Mobile Success State | Mobile Error State |
+| :---: | :---: | :---: | :---: |
+| <img src="./Screenshots/Mobile%20send%20screen.png" width="100%" alt="Mobile Send Form" /> | <img src="./Screenshots/mobile%20confirm%20screen.png" width="100%" alt="Mobile Confirm" /> | <img src="./Screenshots/mobile%20success%20screen.png" width="100%" alt="Mobile Success" /> | <img src="./Screenshots/mobile%20send%20error%20state.png" width="100%" alt="Mobile Send Error State" /> |
 
 ---
 
@@ -178,4 +225,4 @@ Add real persistence with localStorage so the balance and transaction history su
 - **Project Title:** Trusta — Digital Financial Dashboard
 - **Project Link:** 
     - Github Repository: https://github.com/QweciKuranchie/Trusta.git
-    - Live Demo: https://trusta-frontend.vercel.app/
+    - Live Demo: https://trusta-ten.vercel.app
